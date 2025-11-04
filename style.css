@@ -1,0 +1,70 @@
+
+/* 
+css file 
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: 100%;
+}
+
+ .nav-container{
+    background-color: black;
+    display:flex;
+    padding: 5px;
+    font-size: 1.1rem;
+    color: white;
+    justify-content: space-around;
+}
+.nav-container>.nav-item{
+    width: 100px;
+    text-align: center;
+    transition: 0.8s ease;
+    /* background-color: rgb(162, 0, 255); */
+}
+.nav-item:hover{
+    background-color: chartreuse;
+    cursor: pointer;
+}
+.bg-container{
+    /* border: 2px solid black;s */
+    height: 73%;
+    background-image: url("https://www.w3schools.com/w3images/coffeehouse.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Inconsolata", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+
+}
+.bg-container>.text-container{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+}
+
+.bg-container>.text-container-2{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+   
+   
+}
+
+
+
+
+
+
+
