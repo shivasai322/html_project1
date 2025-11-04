@@ -18,6 +18,9 @@ body,html{
     font-size: 1.1rem;
     color: white;
     justify-content: space-around;
+    position: fixed;
+    z-index: +1;
+    width:100%
 }
 .nav-container>.nav-item{
     width: 100px;
@@ -58,13 +61,37 @@ body,html{
     background-color: black;
     color: white;
     padding: 5px;
-   
-   
 }
 
+.bg-container>.text-container-3{
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    /* background-color: black; */
+    color: white;
+    padding:5px
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+} 
+.main{
+    width:50%;
+    height: 2000px;
+    border: 2px solid black;
+    
+} 
+.about >p{
+    text-align: center;
+    background-color: black;
+  
 
+}
 
-
+   
 
 
 
