@@ -1,38 +1,41 @@
-
 /* 
 css file 
 */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body,html{
+body,
+html {
     height: 100%;
 }
 
- .nav-container{
+.nav-container {
     background-color: black;
-    display:flex;
+    display: flex;
     padding: 5px;
     font-size: 1.1rem;
     color: white;
     justify-content: space-around;
     position: fixed;
     z-index: +1;
-    width:100%
+    width: 100%
 }
-.nav-container>.nav-item{
+
+.nav-container>.nav-item {
     width: 100px;
     text-align: center;
     transition: 0.8s ease;
     /* background-color: rgb(162, 0, 255); */
 }
-.nav-item:hover{
+
+.nav-item:hover {
     background-color: chartreuse;
     cursor: pointer;
 }
-.bg-container{
+
+.bg-container {
     /* border: 2px solid black;s */
     height: 73%;
     background-image: url("https://www.w3schools.com/w3images/coffeehouse.jpg");
@@ -44,17 +47,18 @@ body,html{
     justify-content: center;
     align-items: center;
     position: relative;
-    
+
 
 }
-.bg-container>.text-container{
+
+.bg-container>.text-container {
     font-size: 5rem;
     color: white;
     text-align: center;
     line-height: 120px;
 }
 
-.bg-container>.text-container-2{
+.bg-container>.text-container-2 {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -63,69 +67,214 @@ body,html{
     padding: 5px;
 }
 
-.bg-container>.text-container-3{
-    position:absolute;
+.bg-container>.text-container-3 {
+    position: absolute;
     bottom: 10px;
     right: 10px;
     /* background-color: black; */
     color: white;
-    padding:5px
+    padding: 5px
 }
-.main-container{
+
+.main-container {
     width: 100%;
     display: flex;
     justify-content: center;
-     font-family: "Inconsolata", sans-serif;
-    
-    
-} 
-.main{
-    width:50%;
-    height: 2000px;
-    border: 2px solid black;
-    
-} 
-.about{
+    font-family: "Inconsolata", sans-serif;
+
+
+}
+
+.main {
+    width: 50%;
+    height: 3100px;
+    /* border: 2px solid black; */
+
+}
+
+.about {
     text-align: center;
     padding: 50px;
     display: flex;
     justify-content: center;
 }
-.about>p{
+
+.about>p {
     background-color: black;
     color: white;
     padding: 10px;
-    width:fit-content;
+    width: fit-content;
     letter-spacing: 10px;
-    
+
 }
-.ceo{
+
+.ceo {
     line-height: 20px;
     text-align: justify;
     padding: 20px;
-    
+
 }
-.cheff{
+
+.cheff {
     padding: 30px;
     background-color: rgb(0, 170, 255);
     border-left-width: 5px;
     border-left-style: solid;
     border-left-color: black;
-    margin: 10px ;
+    margin: 10px;
+
+}
+
+.image>img {
+    width: 100%;
+    filter: grayscale(50%)
+}
+
+.hover,
+.address {
+    padding: 10px;
+
+}
+
+.ed-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+
+    /* justify-content:space-evenly; */
+
+}
+
+.ed-container>.eat {
+    /* background-color: chartreuse; */
+    width: 49%;
+    height: 20px;
+    /* border: 2px solid black; */
+    text-align: center;
+    /* justify-content: space-around; */
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.food-container {
+    /* border: 2px solid; */
     
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
-.image>img{
-    width:100%;
-    filter :grayscale(50%)
+
+label {
+    display: inline-block;
+    width: 300px;
+
+    /* background-color: aquamarine; */
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    
+
 }
-.hover,.address{
+
+.label {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.eat,
+.drink {
+    background-color: lightgray;
+   
+}
+.eat-item{
+    margin: 20px 0px;
     padding: 10px;
 }
+.eat-item>p,.eat-item>h4{
+    margin: 10px 0px;
+    line-height: 30px;
+}
+.drink-item>p,.drink-item>h4{
+    margin: 10px 0px;
+    line-height: 30px;
+}
+.drink-container,.eat-container{
+    display: none;
+}
+#eat,#drink{
+    display: none;
+}
+#eat:checked~.eat-container{
+    display:block;
+}
+#drink:checked~.drink-container{
+    display:block;
+}
+.image-container-3{
+    margin: 40px 0px;
+}
+.image-container-3>img{
+    width: 100%;
+    filter: grayscale(50%);
+}
+.para-container{
+    margin: 15px 0px;
+    padding: 10px;
+}
+.image-container-4{
+    margin: 40px 0px;
+}
+.image-container-4>img{
+    width: 100%;
+    filter: grayscale(50%);
+}
+.fiy{
+    margin: 15px 0px;
+    padding: 10px;
+    line-height: 30px;
+}
+.form-container{
+    padding: 10px;
+}
+.reserve{
+    margin: 15px 0px;
+    padding: 10px;
+}
+.fiy>p>span{
+    background-color: black;
+    color: white;
+}
+.form-container>form>input{
+    display: block;
+    margin: 10px 0px;
+    height: 40px;
+    width: 100%;
+}
+.form-container>form>input::placeholder{
+    padding: 15px;
+    color: blueviolet;
+}
+form>div>input{
+    border: 0px solid;
+    padding: 20px;
+    letter-spacing: 10px;
+    background-color: black;
+    color: white;
+}
+form>div>input:hover{
+    background-color: aquamarine;
+    color: black;
 
-
-
-
-   
-
-
+}
+.footer-container{
+    padding: 80px;
+    text-align: center;
+    background-color: aqua;
+    margin: 40px 0px 0px 0px;
+}
 
