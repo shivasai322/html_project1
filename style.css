@@ -22,7 +22,10 @@ html {
     z-index: +1;
     width: 100%
 }
-
+.nav-item>a{
+    text-decoration: none;
+    color: white;
+}
 .nav-container>.nav-item {
     width: 100px;
     text-align: center;
@@ -31,8 +34,9 @@ html {
 }
 
 .nav-item:hover {
-    background-color: chartreuse;
+    background-color: darkgray;
     cursor: pointer;
+    
 }
 
 .bg-container {
@@ -272,9 +276,9 @@ form>div>input:hover{
 
 }
 .footer-container{
-    padding: 80px;
+    padding: 40px;
     text-align: center;
     background-color: aqua;
-    margin: 40px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
 }
 
